@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two Pins Studio</title>
+<meta name="description" content="Small apps and games by an independent developer. No ads, no tracking, no in-app purchases.">
+<link rel="icon" href="logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="/"><img src="logo.svg" alt="" width="36" height="36">Two Pins Studio</a>
+    <nav>
+      <a href="#apps" data-i18n="nav_apps">Apps</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <select class="lang" aria-label="Language"></select>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1 data-i18n="hero_title">Small apps and games, made with care.</h1>
+    <p class="lead" data-i18n="hero_sub"></p>
+  </div>
+
+  <section id="apps">
+    <h2 data-i18n="nav_apps">Apps</h2>
+    <div class="grid">
+      <a class="app" href="palpit/">
+        <img src="palpit/shots/menu.jpg" alt="Pal &amp; Pit">
+        <div>
+          <div class="tags"><span data-i18n="tag_game">Game</span><span data-i18n="soon">Coming soon</span></div>
+          <h3>Pal &amp; Pit</h3>
+          <p data-i18n="palpit_card"></p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 data-i18n="nav_about">About</h2>
+    <p data-i18n="about1"></p>
+    <p data-i18n="about2"></p>
+    <p data-i18n="about3"></p>
+  </section>
+
+  <section class="about">
+    <h2 data-i18n="support_title">Support my work</h2>
+    <p data-i18n="support_text"></p>
+    <a class="btn" href="KOFI_LINK" data-i18n="coffee">Buy me a coffee</a>
+  </section>
+
+  <section class="about">
+    <h2 data-i18n="contact">Contact</h2>
+    <p><a class="mail" href="mailto:two.pins.tech@gmail.com">two.pins.tech@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <span>© 2026 Two Pins Studio</span>
+    <span data-i18n="footer"></span>
+  </footer>
+</div>
+<script src="i18n.js"></script>
+</body>
+</html>

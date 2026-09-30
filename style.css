@@ -1,0 +1,36 @@
+:root {
+  --bg: #f5f6f4; --card: #ffffff; --ink: #1d2226; --muted: #5f676b; --line: #dfe2df; --accent: #5b7c8a;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #121517; --card: #1a1e21; --ink: #e8ebe9; --muted: #9aa3a6; --line: #2a3033; --accent: #86a9b8; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 "Manrope", system-ui, sans-serif; }
+.wrap { max-width: 880px; margin: 0 auto; padding-inline: 20px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 24px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 19px; color: var(--ink); text-decoration: none; }
+.brand svg { width: 36px; height: 36px; }
+nav { display: flex; align-items: center; gap: 20px; }
+nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
+nav a:hover { color: var(--ink); }
+select.lang { font: inherit; font-size: 14px; background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px; }
+.hero { padding-block: 56px 40px; }
+h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.1; margin: 0 0 16px; text-wrap: balance; letter-spacing: -0.02em; }
+h2 { font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 20px; }
+.lead { font-size: 19px; color: var(--muted); max-width: 60ch; margin: 0; }
+section { padding-block: 32px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+.app { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; color: var(--ink); text-decoration: none; transition: transform .15s; }
+.app:hover { transform: translateY(-3px); }
+.app img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; background: #0b0d18; }
+.app div { padding: 16px 20px 20px; }
+.app h3 { margin: 0 0 4px; font-size: 20px; }
+.app p { margin: 8px 0 0; color: var(--muted); font-size: 15px; }
+.tags { display: flex; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.tags span { color: var(--accent); }
+.tags span + span { color: var(--muted); }
+.about p { max-width: 62ch; margin: 0 0 12px; }
+.btn { display: inline-block; background: var(--ink); color: var(--bg); padding: 12px 22px; border-radius: 999px; font-weight: 700; text-decoration: none; }
+.mail { text-decoration: none; font-weight: 700; color: var(--accent); user-select: all; }
+footer { border-top: 1px solid var(--line); margin-top: 40px; padding-block: 24px 40px; color: var(--muted); font-size: 14px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
