@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Norbert</title>
+<meta name="description" content="A party game for 2 to 8 players on one phone. Bet on funny stats about your own life. No ads, no tracking.">
+<link rel="icon" href="../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="norbert.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a href="../">← Two Pins Studio</a>
+    <select class="lang" aria-label="Language"></select>
+  </header>
+
+  <img class="ghost" src="norbert.png" alt="Norbert the ghost, with glasses and a clipboard">
+  <h1>Norbert</h1>
+  <p class="tagline" data-i18n="nb_tagline">The ghost who turns your life into stats.</p>
+  <p class="lead" data-i18n="nb_pitch"></p>
+  <p class="lead" data-i18n="nb_pitch2"></p>
+  <p class="note" data-i18n="nb_lang_note"></p>
+  <div class="stores">
+    <div class="store">App Store<b data-i18n="soon">Coming soon</b></div>
+    <div class="store">Google Play<b data-i18n="soon">Coming soon</b></div>
+  </div>
+
+  <section>
+    <h2 data-i18n="shots">Screenshots</h2>
+    <div class="shots">
+      <img src="shots/menu.jpg" alt="Menu" loading="lazy">
+      <img src="shots/setup.jpg" alt="Game setup" loading="lazy">
+      <img src="shots/inputs.jpg" alt="Personal inputs" loading="lazy">
+      <img src="shots/bets.jpg" alt="Bets" loading="lazy">
+      <img src="shots/reveal.jpg" alt="Reveal" loading="lazy">
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="howto">How to play</h2>
+    <div class="rows rules">
+      <div><h3 data-i18n="nb_inputs"></h3><p data-i18n="nb_inputsD"></p></div>
+      <div><h3 data-i18n="nb_bets"></h3><p data-i18n="nb_betsD"></p></div>
+      <div><h3 data-i18n="nb_reveal"></h3><p data-i18n="nb_revealD"></p></div>
+    </div>
+    <h3 style="margin-top:28px" data-i18n="nb_points"></h3>
+    <p class="muted" data-i18n="nb_pointsD"></p>
+    <div class="tiers">
+      <span style="background:#5BE37D" data-i18n="nb_close"></span>
+      <span style="background:#FFA63D" data-i18n="nb_bullseye"></span>
+    </div>
+    <div class="rows" style="margin-top:28px">
+      <div><h3 data-i18n="nb_setup"></h3><p data-i18n="nb_setupD"></p></div>
+      <div><h3 data-i18n="nb_stats"></h3><p data-i18n="nb_statsD"></p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="why">
+      <h2 data-i18n="free_title"></h2>
+      <p data-i18n="nb_free"></p>
+      <p data-i18n="support_text"></p>
+      <a class="btn" href="https://ko-fi.com/twopinsstudio" target="_blank" rel="noopener" data-i18n="coffee">Buy me a coffee</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="credits">Credits</h2>
+    <dl>
+      <dt data-i18n="cr_made"></dt><dd>Jeff · Two Pins Studio</dd>
+      <dt data-i18n="cr_tech"></dt><dd>Flutter</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2 data-i18n="contact">Contact</h2>
+    <p><a class="mail" href="mailto:two.pins.tech@gmail.com">two.pins.tech@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <a href="privacy.html" data-i18n="privacy">Privacy policy</a>
+    <a href="support.html" data-i18n="support">Support</a>
+    <a href="../">Two Pins Studio</a>
+  </footer>
+</div>
+<script src="../i18n.js"></script>
+</body>
+</html>
