@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wie oft hast du seit deiner Geburt geblinzelt? | Norbert</title>
+<meta name="description" content="Wie oft hast du seit deiner Geburt geblinzelt? Gib dein Alter ein und Norbert zählt: Mit 30 Jahren sind es etwa 157.680.000. Rechnung und Quellen.">
+<link rel="canonical" href="https://twopinsstudio.github.io/norbert/de/lidschlaege.html">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/clignements.html">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/blinks.html">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/battiti-di-ciglia.html">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/lidschlaege.html">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/parpadeos.html">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/piscadas.html">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/en/blinks.html">
+<meta name="apple-itunes-app" content="app-id=6833594369">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/norbert/de/lidschlaege.html">
+<meta property="og:title" content="Wie oft hast du seit deiner Geburt geblinzelt?">
+<meta property="og:description" content="Wie oft hast du seit deiner Geburt geblinzelt? Gib dein Alter ein und Norbert zählt: Mit 30 Jahren sind es etwa 157.680.000. Rechnung und Quellen.">
+<meta property="og:image" content="https://twopinsstudio.github.io/norbert/norbert.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../norbert.css">
+</head>
+<body>
+<div class="wrap stat">
+  <header>
+    <a href="../">← Norbert</a>
+  </header>
+
+  <h1>Wie oft hast du seit deiner Geburt geblinzelt?</h1>
+
+  <div class="calc">
+    <label>Dein Alter <input id="age" type="number" inputmode="numeric" min="1" max="120" value="30"> Jahre</label>
+    <p class="answer">Mit <span data-v="age">30</span> Jahren etwa <b data-v="answer">157.680.000</b> </p>
+  </div>
+
+  <div class="says">
+    <img src="../norbert.png" alt="Norbert, das Gespenst" width="88" height="88">
+    <p>„Wenn du blinzelst, husche ich hinter dir vorbei. Du hast mich nie gesehen.“</p>
+  </div>
+
+  <p class="muted">Vor dem Bildschirm blinzelst du viel seltener. Daher die trockenen Augen.</p>
+
+  <section>
+    <h2>Wie Norbert zählt</h2>
+    <p>Etwa 15 Lidschläge pro Minute in Ruhe, bei 16 wachen Stunden pro Tag. Vor einem Bildschirm sinkt das auf 5 bis 7 pro Minute.</p>
+    <p class="muted">Quellen: BioNumbers (Harvard University)</p>
+  </section>
+
+  <section class="why">
+    <h2>Hätten deine Freunde es erraten?</h2>
+    <p>Bei Norbert wettet zuerst jeder auf die Zahl, dann verrät Norbert die Antwort. Wer am nächsten dran ist, gewinnt. 2 bis 8 Spieler an einem Handy, über 100 Statistiken über dein Leben.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6833594369">Im App Store laden</a>
+  </section>
+
+  <section>
+    <h2>Norbert hat auch gezählt</h2>
+    <ul class="more">
+      <li><a href="niesen.html">Wie oft hast du seit deiner Geburt geniest?</a></li>
+      <li><a href="lachen.html">Wie oft hast du seit deiner Geburt gelacht?</a></li>
+      <li><a href="gesprochene-woerter.html">Wie viele Wörter hast du seit deiner Geburt gesprochen?</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="../">Norbert</a>
+    <a href="../privacy.html">Datenschutz</a>
+    <a href="../../">Two Pins Studio</a>
+  </footer>
+</div>
+<script>
+const fmt = v => {
+  const [w, d] = (Math.abs(v) >= 10 ? String(Math.round(v)) : v.toFixed(1).replace(/\.0$/, '')).split('.');
+  return w.replace(/\B(?=(\d{3})+$)/g, '.') + (d ? ',' + d : '');
+};
+const calc = age => { const answer = age * 365 * 16 * 60 * 15; return { age, answer }; };
+const input = document.getElementById('age');
+input.oninput = () => {
+  const age = +input.value;
+  if (!(age >= 1 && age <= 120)) return;
+  const v = calc(age);
+  for (const el of document.querySelectorAll('[data-v]')) el.textContent = fmt(v[el.dataset.v]);
+};
+</script>
+</body>
+</html>

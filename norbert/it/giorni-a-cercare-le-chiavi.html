@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanti giorni della tua vita hai passato a cercare chiavi, telefono o occhiali? | Norbert</title>
+<meta name="description" content="Quanti giorni della tua vita hai passato a cercare chiavi, telefono o occhiali? Inserisci la tua età e Norbert conta: a 30 anni, sono circa 50. Il calcolo e le fonti.">
+<link rel="canonical" href="https://twopinsstudio.github.io/norbert/it/giorni-a-cercare-le-chiavi.html">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/jours-a-chercher-ses-cles.html">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/days-looking-for-keys.html">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/giorni-a-cercare-le-chiavi.html">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/tage-schluessel-suchen.html">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/dias-buscando-las-llaves.html">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/dias-procurando-as-chaves.html">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/en/days-looking-for-keys.html">
+<meta name="apple-itunes-app" content="app-id=6833594369">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/norbert/it/giorni-a-cercare-le-chiavi.html">
+<meta property="og:title" content="Quanti giorni della tua vita hai passato a cercare chiavi, telefono o occhiali?">
+<meta property="og:description" content="Quanti giorni della tua vita hai passato a cercare chiavi, telefono o occhiali? Inserisci la tua età e Norbert conta: a 30 anni, sono circa 50. Il calcolo e le fonti.">
+<meta property="og:image" content="https://twopinsstudio.github.io/norbert/norbert.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../norbert.css">
+</head>
+<body>
+<div class="wrap stat">
+  <header>
+    <a href="../">← Norbert</a>
+  </header>
+
+  <h1>Quanti giorni della tua vita hai passato a cercare chiavi, telefono o occhiali?</h1>
+
+  <div class="calc">
+    <label>La tua età <input id="age" type="number" inputmode="numeric" min="1" max="120" value="30"> anni</label>
+    <p class="answer">A <span data-v="age">30</span> anni, circa <b data-v="answer">50</b> </p>
+  </div>
+
+  <div class="says">
+    <img src="../norbert.png" alt="Norbert il fantasma" width="88" height="88">
+    <p>« Non sei tu che perdi le chiavi, sono io che le sposto. Il mio unico passatempo. »</p>
+  </div>
+
+  <p class="muted">Chiavi, telefono, occhiali: il podio delle cose che perdiamo.</p>
+
+  <section>
+    <h2>Come conta Norbert</h2>
+    <p>Circa due giorni e mezzo l'anno passati a cercare le proprie cose, chiavi, telefono e telecomando in testa, dai 10 anni. Il dato viene da un'indagine commerciale della società Pixie, che vende localizzatori di oggetti, condotta nel 2016 su più di 1.700 adulti americani.</p>
+    <p class="muted">Fonti: Pixie, Lost &amp; Found Survey, 2016</p>
+  </section>
+
+  <section class="why">
+    <h2>I tuoi amici l'avrebbero indovinato?</h2>
+    <p>In Norbert, ognuno scommette prima sul numero, poi Norbert rivela la risposta. Vince chi si avvicina di più. Da 2 a 8 giocatori su un solo telefono, più di 100 statistiche sulla tua vita.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6833594369">Scarica dall'App Store</a>
+  </section>
+
+  <section>
+    <h2>Norbert ha contato anche</h2>
+    <ul class="more">
+      <li><a href="passi.html">Quanti passi hai fatto in vita tua?</a></li>
+      <li><a href="distanza-intorno-al-sole.html">Quanti chilometri hai percorso intorno al Sole in vita tua?</a></li>
+      <li><a href="lune-piene.html">Quante lune piene hai vissuto?</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="../">Norbert</a>
+    <a href="../privacy.html">Privacy</a>
+    <a href="../../">Two Pins Studio</a>
+  </footer>
+</div>
+<script>
+const fmt = v => {
+  const [w, d] = (Math.abs(v) >= 10 ? String(Math.round(v)) : v.toFixed(1).replace(/\.0$/, '')).split('.');
+  return w.replace(/\B(?=(\d{3})+$)/g, '.') + (d ? ',' + d : '');
+};
+const calc = age => { const answer = Math.max(age - 10, 0) * 2.5; return { age, answer }; };
+const input = document.getElementById('age');
+input.oninput = () => {
+  const age = +input.value;
+  if (!(age >= 1 && age <= 120)) return;
+  const v = calc(age);
+  for (const el of document.querySelectorAll('[data-v]')) el.textContent = fmt(v[el.dataset.v]);
+};
+</script>
+</body>
+</html>

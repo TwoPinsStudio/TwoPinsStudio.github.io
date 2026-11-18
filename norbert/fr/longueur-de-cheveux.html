@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Si on mettait bout à bout tous les cheveux qui t'ont poussé sur la tête, combien de kilomètres ça ferait ? | Norbert</title>
+<meta name="description" content="Si on mettait bout à bout tous les cheveux qui t'ont poussé sur la tête, combien de kilomètres ça ferait ? Entre ton âge et Norbert compte : à 30 ans, c'est environ 346 kilomètres. Le calcul et les sources.">
+<link rel="canonical" href="https://twopinsstudio.github.io/norbert/fr/longueur-de-cheveux.html">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/longueur-de-cheveux.html">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/hair-length-grown.html">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/lunghezza-dei-capelli.html">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/gewachsene-haarlaenge.html">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/longitud-de-pelo.html">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/comprimento-de-cabelo.html">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/en/hair-length-grown.html">
+<meta name="apple-itunes-app" content="app-id=6833594369">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/norbert/fr/longueur-de-cheveux.html">
+<meta property="og:title" content="Si on mettait bout à bout tous les cheveux qui t'ont poussé sur la tête, combien de kilomètres ça ferait ?">
+<meta property="og:description" content="Si on mettait bout à bout tous les cheveux qui t'ont poussé sur la tête, combien de kilomètres ça ferait ? Entre ton âge et Norbert compte : à 30 ans, c'est environ 346 kilomètres. Le calcul et les sources.">
+<meta property="og:image" content="https://twopinsstudio.github.io/norbert/norbert.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../norbert.css">
+</head>
+<body>
+<div class="wrap stat">
+  <header>
+    <a href="../">← Norbert</a>
+  </header>
+
+  <h1>Si on mettait bout à bout tous les cheveux qui t'ont poussé sur la tête, combien de kilomètres ça ferait ?</h1>
+
+  <div class="calc">
+    <label>Ton âge <input id="age" type="number" inputmode="numeric" min="1" max="120" value="30"> ans</label>
+    <p class="answer">À <span data-v="age">30</span> ans, environ <b data-v="answer">346</b> kilomètres</p>
+  </div>
+
+  <div class="says">
+    <img src="../norbert.png" alt="Norbert le fantôme" width="88" height="88">
+    <p>« Dressés vers le ciel, ils seraient allés <span data-v="e0">3,5</span> fois dans l'espace. »</p>
+  </div>
+
+  <p class="muted">Soit <span data-v="e1">39</span> fois la hauteur de l'Everest.</p>
+
+  <section>
+    <h2>Comment Norbert compte</h2>
+    <p>Environ 100 000 cheveux sur la tête, dont 85 à 90 pour cent sont en train de pousser à un moment donné. Chacun pousse d'environ 0,35 millimètre par jour, soit à peu près 12,8 centimètres par an. Selon la Fédération aéronautique internationale, l'espace commence à 100 kilomètres d'altitude, à la ligne de Kármán.</p>
+    <p class="muted">Sources : StatPearls (National Library of Medicine); Fédération aéronautique internationale (ligne de Kármán)</p>
+  </section>
+
+  <section class="why">
+    <h2>Et tes amis, ils auraient deviné ?</h2>
+    <p>Dans Norbert, chacun parie d'abord sur le chiffre, puis Norbert révèle la réponse. Le plus proche gagne. De 2 à 8 joueurs sur un seul téléphone, plus de 100 stats sur ta vie.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6833594369">Télécharger sur l'App Store</a>
+  </section>
+
+  <section>
+    <h2>Norbert a aussi compté</h2>
+    <ul class="more">
+      <li><a href="peau-morte.html">Combien de kilos de peau morte as-tu semés depuis ta naissance ?</a></li>
+      <li><a href="sueur.html">Combien de litres de sueur as-tu produits depuis ta naissance ?</a></li>
+      <li><a href="salive.html">Combien de litres de salive as-tu produits depuis ta naissance ?</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="../">Norbert</a>
+    <a href="../privacy.html">Confidentialité</a>
+    <a href="../../">Two Pins Studio</a>
+  </footer>
+</div>
+<script>
+const fmt = v => {
+  const [w, d] = (Math.abs(v) >= 10 ? String(Math.round(v)) : v.toFixed(1).replace(/\.0$/, '')).split('.');
+  return w.replace(/\B(?=(\d{3})+$)/g, ' ') + (d ? ',' + d : '');
+};
+const calc = age => { const answer = age * 100000 * 0.9 * 0.128 / 1000; return { age, answer, e0: answer / 100, e1: answer / 8.849 }; };
+const input = document.getElementById('age');
+input.oninput = () => {
+  const age = +input.value;
+  if (!(age >= 1 && age <= 120)) return;
+  const v = calc(age);
+  for (const el of document.querySelectorAll('[data-v]')) el.textContent = fmt(v[el.dataset.v]);
+};
+</script>
+</body>
+</html>

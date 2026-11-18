@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Cuántos litros de sangre ha bombeado tu corazón desde que naciste? | Norbert</title>
+<meta name="description" content="¿Cuántos litros de sangre ha bombeado tu corazón desde que naciste? Introduce tu edad y Norbert cuenta: a los 30 años, son unos 78.840.000 litros. El cálculo y las fuentes.">
+<link rel="canonical" href="https://twopinsstudio.github.io/norbert/es/sangre-bombeada.html">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/sang-pompe.html">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/blood-pumped.html">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/sangue-pompato.html">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/gepumptes-blut.html">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/sangre-bombeada.html">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/sangue-bombeado.html">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/en/blood-pumped.html">
+<meta name="apple-itunes-app" content="app-id=6833594369">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/norbert/es/sangre-bombeada.html">
+<meta property="og:title" content="¿Cuántos litros de sangre ha bombeado tu corazón desde que naciste?">
+<meta property="og:description" content="¿Cuántos litros de sangre ha bombeado tu corazón desde que naciste? Introduce tu edad y Norbert cuenta: a los 30 años, son unos 78.840.000 litros. El cálculo y las fuentes.">
+<meta property="og:image" content="https://twopinsstudio.github.io/norbert/norbert.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../norbert.css">
+</head>
+<body>
+<div class="wrap stat">
+  <header>
+    <a href="../">← Norbert</a>
+  </header>
+
+  <h1>¿Cuántos litros de sangre ha bombeado tu corazón desde que naciste?</h1>
+
+  <div class="calc">
+    <label>Tu edad <input id="age" type="number" inputmode="numeric" min="1" max="120" value="30"> años</label>
+    <p class="answer">A los <span data-v="age">30</span> años, aproximadamente <b data-v="answer">78.840.000</b> litros</p>
+  </div>
+
+  <div class="says">
+    <img src="../norbert.png" alt="Norbert el fantasma" width="88" height="88">
+    <p>« Decenas de piscinas olímpicas. Sin pausa para el café. »</p>
+  </div>
+
+  <p class="muted">Son <span data-v="e0">32</span> piscinas olímpicas.</p>
+
+  <section>
+    <h2>Cómo cuenta Norbert</h2>
+    <p>En reposo, el corazón bombea unos 5 litros de sangre por minuto: unos 75 latidos de 65 a 70 mililitros cada uno. Es el valor de todos los manuales de fisiología.</p>
+  </section>
+
+  <section class="why">
+    <h2>¿Lo habrían adivinado tus amigos?</h2>
+    <p>En Norbert, cada uno apuesta primero por el número y luego Norbert revela la respuesta. Gana quien más se acerque. De 2 a 8 jugadores en un solo móvil, más de 100 estadísticas sobre tu vida.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6833594369">Descargar en el App Store</a>
+  </section>
+
+  <section>
+    <h2>Norbert también contó</h2>
+    <ul class="more">
+      <li><a href="respiraciones.html">¿Cuántas veces has respirado desde que naciste?</a></li>
+      <li><a href="parpadeos.html">¿Cuántas veces has parpadeado desde que naciste?</a></li>
+      <li><a href="estornudos.html">¿Cuántas veces has estornudado desde que naciste?</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="../">Norbert</a>
+    <a href="../privacy.html">Privacidad</a>
+    <a href="../../">Two Pins Studio</a>
+  </footer>
+</div>
+<script>
+const fmt = v => {
+  const [w, d] = (Math.abs(v) >= 10 ? String(Math.round(v)) : v.toFixed(1).replace(/\.0$/, '')).split('.');
+  return w.replace(/\B(?=(\d{3})+$)/g, '.') + (d ? ',' + d : '');
+};
+const calc = age => { const answer = age * 365 * 24 * 60 * 5; return { age, answer, e0: answer / 2500000 }; };
+const input = document.getElementById('age');
+input.oninput = () => {
+  const age = +input.value;
+  if (!(age >= 1 && age <= 120)) return;
+  const v = calc(age);
+  for (const el of document.querySelectorAll('[data-v]')) el.textContent = fmt(v[el.dataset.v]);
+};
+</script>
+</body>
+</html>

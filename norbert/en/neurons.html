@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How many neurons are in your brain? | Norbert</title>
+<meta name="description" content="How many neurons are in your brain? Enter your age and Norbert counts: at 30, it's about 85,689,750,000. The math and the sources.">
+<link rel="canonical" href="https://twopinsstudio.github.io/norbert/en/neurons.html">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/neurones.html">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/neurons.html">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/neuroni.html">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/neuronen.html">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/neuronas.html">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/neuronios.html">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/en/neurons.html">
+<meta name="apple-itunes-app" content="app-id=6833594369">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/norbert/en/neurons.html">
+<meta property="og:title" content="How many neurons are in your brain?">
+<meta property="og:description" content="How many neurons are in your brain? Enter your age and Norbert counts: at 30, it's about 85,689,750,000. The math and the sources.">
+<meta property="og:image" content="https://twopinsstudio.github.io/norbert/norbert.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../norbert.css">
+</head>
+<body>
+<div class="wrap stat">
+  <header>
+    <a href="../">← Norbert</a>
+  </header>
+
+  <h1>How many neurons are in your brain?</h1>
+
+  <div class="calc">
+    <label>Your age <input id="age" type="number" inputmode="numeric" min="1" max="120" value="30"> years</label>
+    <p class="answer">At <span data-v="age">30</span>, about <b data-v="answer">85,689,750,000</b> </p>
+  </div>
+
+  <div class="says">
+    <img src="../norbert.png" alt="Norbert the ghost" width="88" height="88">
+    <p>“Your dog has about 500 million in its cortex; you have 16 billion. It still thinks you're amazing.”</p>
+  </div>
+
+  <p class="muted">Since you turned 20, you've been losing about 85,000 a day. Still plenty left to play.</p>
+
+  <section>
+    <h2>How Norbert counts</h2>
+    <p>The starting figure, about 86 billion neurons, comes from Azevedo and colleagues, in 2009. Norbert then removes about 85,000 a day from age 20. That pace is a calculation based on work by Pakkenberg and colleagues, in 2003: between 20 and 90, the cortex loses about 10 percent of its neurons, which averages about 85,000 a day. Careful: some researchers think the loss is smaller, or even negligible.</p>
+    <p class="muted">Sources: Azevedo et al., Journal of Comparative Neurology, 2009; Pakkenberg &amp; Gundersen, Journal of Comparative Neurology, 1997; Pakkenberg et al., Experimental Gerontology, 2003; Jardim-Messeder et al., Frontiers in Neuroanatomy, 2017</p>
+  </section>
+
+  <section class="why">
+    <h2>Would your friends have guessed?</h2>
+    <p>In Norbert, everyone first bets on the number, then Norbert reveals the answer. Closest guess wins. 2 to 8 players on one phone, over 100 stats about your life.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6833594369">Download on the App Store</a>
+  </section>
+
+  <section>
+    <h2>Norbert also counted</h2>
+    <ul class="more">
+      <li><a href="hair-lost.html">How many hairs have you lost since you were born?</a></li>
+      <li><a href="hair-length-grown.html">If you put end to end all the hair that ever grew on your head, how many kilometers would it make?</a></li>
+      <li><a href="dead-skin.html">How many kilos of dead skin have you shed since you were born?</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="../">Norbert</a>
+    <a href="../privacy.html">Privacy policy</a>
+    <a href="../../">Two Pins Studio</a>
+  </footer>
+</div>
+<script>
+const fmt = v => {
+  const [w, d] = (Math.abs(v) >= 10 ? String(Math.round(v)) : v.toFixed(1).replace(/\.0$/, '')).split('.');
+  return w.replace(/\B(?=(\d{3})+$)/g, ',') + (d ? '.' + d : '');
+};
+const calc = age => { const answer = 86000000000 - Math.max(age - 20, 0) * 365 * 85000; return { age, answer }; };
+const input = document.getElementById('age');
+input.oninput = () => {
+  const age = +input.value;
+  if (!(age >= 1 && age <= 120)) return;
+  const v = calc(age);
+  for (const el of document.querySelectorAll('[data-v]')) el.textContent = fmt(v[el.dataset.v]);
+};
+</script>
+</body>
+</html>

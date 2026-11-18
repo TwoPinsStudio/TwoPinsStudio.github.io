@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantos quilos de cocô você já produziu desde que nasceu? | Norbert</title>
+<meta name="description" content="Quantos quilos de cocô você já produziu desde que nasceu? Digite sua idade e Norbert conta: aos 30 anos, são cerca de 1.402 quilos. O cálculo e as fontes.">
+<link rel="canonical" href="https://twopinsstudio.github.io/norbert/pt/coco.html">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/caca.html">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/poop.html">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/cacca.html">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/kacke.html">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/caca.html">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/coco.html">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/en/poop.html">
+<meta name="apple-itunes-app" content="app-id=6833594369">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/norbert/pt/coco.html">
+<meta property="og:title" content="Quantos quilos de cocô você já produziu desde que nasceu?">
+<meta property="og:description" content="Quantos quilos de cocô você já produziu desde que nasceu? Digite sua idade e Norbert conta: aos 30 anos, são cerca de 1.402 quilos. O cálculo e as fontes.">
+<meta property="og:image" content="https://twopinsstudio.github.io/norbert/norbert.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../norbert.css">
+</head>
+<body>
+<div class="wrap stat">
+  <header>
+    <a href="../">← Norbert</a>
+  </header>
+
+  <h1>Quantos quilos de cocô você já produziu desde que nasceu?</h1>
+
+  <div class="calc">
+    <label>Sua idade <input id="age" type="number" inputmode="numeric" min="1" max="120" value="30"> anos</label>
+    <p class="answer">Aos <span data-v="age">30</span> anos, cerca de <b data-v="answer">1.402</b> quilos</p>
+  </div>
+
+  <div class="says">
+    <img src="../norbert.png" alt="Norbert, o fantasma" width="88" height="88">
+    <p>« Dá para encher… não, não vou terminar essa frase. »</p>
+  </div>
+
+  <p class="muted">O peso de <span data-v="e0">1,1</span> carros. Pode se orgulhar.</p>
+
+  <section>
+    <h2>Como Norbert conta</h2>
+    <p>Cerca de 128 gramas por dia. É o peso úmido mediano calculado a partir de dezenas de estudos no mundo todo, cujas médias vão de 51 a 796 gramas.</p>
+    <p class="muted">Fontes: Rose et al., Critical Reviews in Environmental Science and Technology, 2015</p>
+  </section>
+
+  <section class="why">
+    <h2>Seus amigos teriam adivinhado?</h2>
+    <p>No Norbert, cada um aposta primeiro no número e depois o Norbert revela a resposta. Quem chegar mais perto ganha. De 2 a 8 jogadores em um só celular, mais de 100 estatísticas sobre a sua vida.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6833594369">Baixar na App Store</a>
+  </section>
+
+  <section>
+    <h2>Norbert também contou</h2>
+    <ul class="more">
+      <li><a href="puns.html">Quantos puns você já soltou desde que nasceu?</a></li>
+      <li><a href="horas-no-banheiro.html">Quantas horas você já passou no vaso sanitário desde que nasceu?</a></li>
+      <li><a href="rolos-papel-higienico.html">Quantos rolos de papel higiênico você já usou desde que nasceu?</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="../">Norbert</a>
+    <a href="../privacy.html">Privacidade</a>
+    <a href="../../">Two Pins Studio</a>
+  </footer>
+</div>
+<script>
+const fmt = v => {
+  const [w, d] = (Math.abs(v) >= 10 ? String(Math.round(v)) : v.toFixed(1).replace(/\.0$/, '')).split('.');
+  return w.replace(/\B(?=(\d{3})+$)/g, '.') + (d ? ',' + d : '');
+};
+const calc = age => { const answer = age * 365 * 0.128; return { age, answer, e0: answer / 1300 }; };
+const input = document.getElementById('age');
+input.oninput = () => {
+  const age = +input.value;
+  if (!(age >= 1 && age <= 120)) return;
+  const v = calc(age);
+  for (const el of document.querySelectorAll('[data-v]')) el.textContent = fmt(v[el.dataset.v]);
+};
+</script>
+</body>
+</html>

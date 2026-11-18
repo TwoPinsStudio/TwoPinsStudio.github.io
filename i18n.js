@@ -7,6 +7,8 @@ const T = {
   hero_title: ["Apps and games, made with care.", "Des applis et des jeux, faits avec soin.", "App e giochi, fatti con cura.", "Apps und Spiele, mit Sorgfalt gemacht.", "Apps y juegos, hechos con cariño.", "Apps e jogos, feitos com carinho.", "丁寧につくる、アプリとゲーム。", "정성껏 만든 앱과 게임."],
   hero_sub: ["Two Pins Studio brings together the projects I want to share with everyone, for free, with no ads or trackers.", "Two Pins Studio regroupe mes projets que je souhaite partager à tous, gratuitement, sans pub ni traceurs.", "Two Pins Studio raccoglie i progetti che voglio condividere con tutti, gratis, senza pubblicità né tracker.", "Two Pins Studio vereint meine Projekte, die ich mit allen teilen möchte – kostenlos, ohne Werbung und ohne Tracker.", "Two Pins Studio reúne los proyectos que quiero compartir con todos, gratis, sin anuncios ni rastreadores.", "Two Pins Studio reúne os projetos que quero compartilhar com todos, de graça, sem anúncios nem rastreadores.", "Two Pins Studio は、みんなに無料で届けたいプロジェクトをまとめた場所です。広告もトラッカーもありません。", "Two Pins Studio는 모두와 무료로 나누고 싶은 프로젝트를 모은 곳입니다. 광고도 추적기도 없습니다."],
   tag_game: ["Game", "Jeu", "Gioco", "Spiel", "Juego", "Jogo", "ゲーム", "게임"],
+  download: ["Download", "Télécharger", "Scarica", "Laden", "Descargar", "Baixar", "ダウンロード", "다운로드"],
+  try: ["Try a stat", "Essayer une stat", "Prova una statistica", "Eine Statistik testen", "Prueba una estadística", "Experimente uma estatística", "統計を試す", "통계 체험하기"],
   soon: ["Coming soon", "Bientôt disponible", "Prossimamente", "Bald verfügbar", "Próximamente", "Em breve", "近日公開", "출시 예정"],
   palpit_card: ["A two-player race on one screen, face to face.", "Une course à deux sur un seul écran, face à face.", "Una corsa a due su un solo schermo, faccia a faccia.", "Ein Rennen zu zweit auf einem Bildschirm, von Angesicht zu Angesicht.", "Una carrera para dos en una sola pantalla, cara a cara.", "Uma corrida para dois em uma só tela, frente a frente.", "1つの画面で向かい合って走る、2人対戦レース。", "하나의 화면에서 마주 보고 달리는 2인 레이스."],
   about1: ["Hi, I'm Jeff, a developer passionate about mobile apps. I make apps and games in my spare time — every project starts from a simple idea, something I want to bring to life.", "Bonjour, je suis Jeff, développeur passionné par les applis mobiles. Je crée des applis et des jeux sur mon temps libre — mes projets naissent tous d'une simple idée, une envie que je veux concrétiser.", "Ciao, sono Jeff, sviluppatore appassionato di app mobili. Creo app e giochi nel tempo libero: ogni progetto nasce da un'idea semplice, un desiderio che voglio realizzare.", "Hallo, ich bin Jeff, ein Entwickler mit Leidenschaft für mobile Apps. Ich mache Apps und Spiele in meiner Freizeit – jedes Projekt beginnt mit einer einfachen Idee, etwas, das ich verwirklichen möchte.", "Hola, soy Jeff, un desarrollador apasionado por las apps móviles. Creo apps y juegos en mi tiempo libre: cada proyecto nace de una idea sencilla, algo que quiero hacer realidad.", "Oi, eu sou o Jeff, desenvolvedor apaixonado por apps para celular. Crio apps e jogos no meu tempo livre — cada projeto nasce de uma ideia simples, uma vontade que quero tornar realidade.", "こんにちは、ジェフです。モバイルアプリが大好きな開発者です。空いた時間にアプリやゲームをつくっています。どのプロジェクトも、形にしたいと思ったシンプルなアイデアから生まれています。", "안녕하세요, 모바일 앱을 사랑하는 개발자 제프입니다. 여가 시간에 앱과 게임을 만듭니다. 모든 프로젝트는 꼭 실현하고 싶은 단순한 아이디어에서 시작됩니다."],
@@ -121,6 +123,13 @@ function setLang(code) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const row = T[el.dataset.i18n];
     if (row) el.textContent = row[i] || row[0];
+  });
+  // Links with one target per language (data-href-fr…), English when the language has none.
+  document.querySelectorAll('[data-href-fr]').forEach(a => a.href = a.getAttribute('data-href-' + code) || a.dataset.hrefEn);
+  // Screenshots exist per language (shots/<lang>/), English when the language has none.
+  document.querySelectorAll('[data-langs]').forEach(box => {
+    const dir = box.dataset.langs.split(' ').includes(code) ? code : 'en';
+    box.querySelectorAll('img[data-shot]').forEach(img => img.src = `shots/${dir}/${img.dataset.shot}.jpg`);
   });
   document.querySelectorAll('select.lang').forEach(s => s.value = code);
 }

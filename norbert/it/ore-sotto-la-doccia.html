@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quante ore hai passato sotto la doccia? | Norbert</title>
+<meta name="description" content="Quante ore hai passato sotto la doccia? Inserisci la tua età e Norbert conta: a 30 anni, sono circa 1.460 ore. Il calcolo e le fonti.">
+<link rel="canonical" href="https://twopinsstudio.github.io/norbert/it/ore-sotto-la-doccia.html">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/heures-sous-la-douche.html">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/hours-in-the-shower.html">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/ore-sotto-la-doccia.html">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/stunden-unter-der-dusche.html">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/horas-en-la-ducha.html">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/horas-no-chuveiro.html">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/en/hours-in-the-shower.html">
+<meta name="apple-itunes-app" content="app-id=6833594369">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/norbert/it/ore-sotto-la-doccia.html">
+<meta property="og:title" content="Quante ore hai passato sotto la doccia?">
+<meta property="og:description" content="Quante ore hai passato sotto la doccia? Inserisci la tua età e Norbert conta: a 30 anni, sono circa 1.460 ore. Il calcolo e le fonti.">
+<meta property="og:image" content="https://twopinsstudio.github.io/norbert/norbert.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../norbert.css">
+</head>
+<body>
+<div class="wrap stat">
+  <header>
+    <a href="../">← Norbert</a>
+  </header>
+
+  <h1>Quante ore hai passato sotto la doccia?</h1>
+
+  <div class="calc">
+    <label>La tua età <input id="age" type="number" inputmode="numeric" min="1" max="120" value="30"> anni</label>
+    <p class="answer">A <span data-v="age">30</span> anni, circa <b data-v="answer">1.460</b> ore</p>
+  </div>
+
+  <div class="says">
+    <img src="../norbert.png" alt="Norbert il fantasma" width="88" height="88">
+    <p>« Quante cantando? Preferisco non dirlo. »</p>
+  </div>
+
+  <p class="muted">Sono <span data-v="e0">61</span> giorni di fila sotto la doccia.</p>
+
+  <section>
+    <h2>Come conta Norbert</h2>
+    <p>Una doccia di circa 8 minuti al giorno. Nessuno studio nazionale misura la durata media di una doccia: è una stima di Norbert.</p>
+  </section>
+
+  <section class="why">
+    <h2>I tuoi amici l'avrebbero indovinato?</h2>
+    <p>In Norbert, ognuno scommette prima sul numero, poi Norbert rivela la risposta. Vince chi si avvicina di più. Da 2 a 8 giocatori su un solo telefono, più di 100 statistiche sulla tua vita.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6833594369">Scarica dall'App Store</a>
+  </section>
+
+  <section>
+    <h2>Norbert ha contato anche</h2>
+    <ul class="more">
+      <li><a href="acqua-bevuta.html">Quanti litri d'acqua e altre bevande hai bevuto in vita tua?</a></li>
+      <li><a href="cibo-mangiato.html">Quanti chili di cibo hai mangiato in vita tua?</a></li>
+      <li><a href="polli-mangiati.html">Quanti polli interi hai mangiato in vita tua?</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="../">Norbert</a>
+    <a href="../privacy.html">Privacy</a>
+    <a href="../../">Two Pins Studio</a>
+  </footer>
+</div>
+<script>
+const fmt = v => {
+  const [w, d] = (Math.abs(v) >= 10 ? String(Math.round(v)) : v.toFixed(1).replace(/\.0$/, '')).split('.');
+  return w.replace(/\B(?=(\d{3})+$)/g, '.') + (d ? ',' + d : '');
+};
+const calc = age => { const answer = age * 365 * 8 / 60; return { age, answer, e0: answer / 24 }; };
+const input = document.getElementById('age');
+input.oninput = () => {
+  const age = +input.value;
+  if (!(age >= 1 && age <= 120)) return;
+  const v = calc(age);
+  for (const el of document.querySelectorAll('[data-v]')) el.textContent = fmt(v[el.dataset.v]);
+};
+</script>
+</body>
+</html>

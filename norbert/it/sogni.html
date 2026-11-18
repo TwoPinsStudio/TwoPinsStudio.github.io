@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanti sogni hai fatto in vita tua (anche quelli dimenticati)? | Norbert</title>
+<meta name="description" content="Quanti sogni hai fatto in vita tua (anche quelli dimenticati)? Inserisci la tua età e Norbert conta: a 30 anni, sono circa 54.750. Il calcolo e le fonti.">
+<link rel="canonical" href="https://twopinsstudio.github.io/norbert/it/sogni.html">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/reves.html">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/dreams.html">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/sogni.html">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/traeume.html">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/suenos.html">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/sonhos.html">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/en/dreams.html">
+<meta name="apple-itunes-app" content="app-id=6833594369">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/norbert/it/sogni.html">
+<meta property="og:title" content="Quanti sogni hai fatto in vita tua (anche quelli dimenticati)?">
+<meta property="og:description" content="Quanti sogni hai fatto in vita tua (anche quelli dimenticati)? Inserisci la tua età e Norbert conta: a 30 anni, sono circa 54.750. Il calcolo e le fonti.">
+<meta property="og:image" content="https://twopinsstudio.github.io/norbert/norbert.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../norbert.css">
+</head>
+<body>
+<div class="wrap stat">
+  <header>
+    <a href="../">← Norbert</a>
+  </header>
+
+  <h1>Quanti sogni hai fatto in vita tua (anche quelli dimenticati)?</h1>
+
+  <div class="calc">
+    <label>La tua età <input id="age" type="number" inputmode="numeric" min="1" max="120" value="30"> anni</label>
+    <p class="answer">A <span data-v="age">30</span> anni, circa <b data-v="answer">54.750</b> </p>
+  </div>
+
+  <div class="says">
+    <img src="../norbert.png" alt="Norbert il fantasma" width="88" height="88">
+    <p>« In almeno uno giravi senza vestiti in pubblico. Non ho detto niente. »</p>
+  </div>
+
+  <p class="muted">La maggior parte dei sogni si dimentica pochi minuti dopo il risveglio.</p>
+
+  <section>
+    <h2>Come conta Norbert</h2>
+    <p>Una notte conta da 4 a 6 fasi di sonno REM, quelle in cui si sogna di più. Norbert conta un sogno per fase, circa 5 a notte, anche se non ce ne ricordiamo quasi mai.</p>
+    <p class="muted">Fonti: Sleep Foundation</p>
+  </section>
+
+  <section class="why">
+    <h2>I tuoi amici l'avrebbero indovinato?</h2>
+    <p>In Norbert, ognuno scommette prima sul numero, poi Norbert rivela la risposta. Vince chi si avvicina di più. Da 2 a 8 giocatori su un solo telefono, più di 100 statistiche sulla tua vita.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6833594369">Scarica dall'App Store</a>
+  </section>
+
+  <section>
+    <h2>Norbert ha contato anche</h2>
+    <ul class="more">
+      <li><a href="ore-di-sonno.html">Quante ore hai dormito in vita tua?</a></li>
+      <li><a href="ore-davanti-agli-schermi.html">Quante ore hai passato davanti a uno schermo in vita tua?</a></li>
+      <li><a href="giorni-a-cercare-le-chiavi.html">Quanti giorni della tua vita hai passato a cercare chiavi, telefono o occhiali?</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="../">Norbert</a>
+    <a href="../privacy.html">Privacy</a>
+    <a href="../../">Two Pins Studio</a>
+  </footer>
+</div>
+<script>
+const fmt = v => {
+  const [w, d] = (Math.abs(v) >= 10 ? String(Math.round(v)) : v.toFixed(1).replace(/\.0$/, '')).split('.');
+  return w.replace(/\B(?=(\d{3})+$)/g, '.') + (d ? ',' + d : '');
+};
+const calc = age => { const answer = age * 365 * 5; return { age, answer }; };
+const input = document.getElementById('age');
+input.oninput = () => {
+  const age = +input.value;
+  if (!(age >= 1 && age <= 120)) return;
+  const v = calc(age);
+  for (const el of document.querySelectorAll('[data-v]')) el.textContent = fmt(v[el.dataset.v]);
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wie viele Rollen Klopapier hast du seit deiner Geburt verbraucht? | Norbert</title>
+<meta name="description" content="Wie viele Rollen Klopapier hast du seit deiner Geburt verbraucht? Gib dein Alter ein und Norbert zählt: Mit 30 Jahren sind es etwa 2.809. Rechnung und Quellen.">
+<link rel="canonical" href="https://twopinsstudio.github.io/norbert/de/klopapierrollen.html">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/rouleaux-papier-toilette.html">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/toilet-paper-rolls.html">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/rotoli-carta-igienica.html">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/klopapierrollen.html">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/rollos-papel-higienico.html">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/rolos-papel-higienico.html">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/en/toilet-paper-rolls.html">
+<meta name="apple-itunes-app" content="app-id=6833594369">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/norbert/de/klopapierrollen.html">
+<meta property="og:title" content="Wie viele Rollen Klopapier hast du seit deiner Geburt verbraucht?">
+<meta property="og:description" content="Wie viele Rollen Klopapier hast du seit deiner Geburt verbraucht? Gib dein Alter ein und Norbert zählt: Mit 30 Jahren sind es etwa 2.809. Rechnung und Quellen.">
+<meta property="og:image" content="https://twopinsstudio.github.io/norbert/norbert.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../norbert.css">
+</head>
+<body>
+<div class="wrap stat">
+  <header>
+    <a href="../">← Norbert</a>
+  </header>
+
+  <h1>Wie viele Rollen Klopapier hast du seit deiner Geburt verbraucht?</h1>
+
+  <div class="calc">
+    <label>Dein Alter <input id="age" type="number" inputmode="numeric" min="1" max="120" value="30"> Jahre</label>
+    <p class="answer">Mit <span data-v="age">30</span> Jahren etwa <b data-v="answer">2.809</b> </p>
+  </div>
+
+  <div class="says">
+    <img src="../norbert.png" alt="Norbert, das Gespenst" width="88" height="88">
+    <p>„Ein kleiner Wald lässt grüßen.“</p>
+  </div>
+
+  <p class="muted">Recyclingpapier ist genauso weich, und kein Baum wird gefällt.</p>
+
+  <section>
+    <h2>Wie Norbert zählt</h2>
+    <p>Etwa 57 Blatt pro Tag, ab 3 Jahren. Die Zahl stammt von Charmin und wird überall in der Presse zitiert, aber Norbert hat die ursprüngliche Studie nicht gefunden. Die 200 Blatt pro Rolle sind Norberts Schätzung.</p>
+    <p class="muted">Quellen: Charmin (Procter &amp; Gamble), chiffre repris par la presse</p>
+  </section>
+
+  <section class="why">
+    <h2>Hätten deine Freunde es erraten?</h2>
+    <p>Bei Norbert wettet zuerst jeder auf die Zahl, dann verrät Norbert die Antwort. Wer am nächsten dran ist, gewinnt. 2 bis 8 Spieler an einem Handy, über 100 Statistiken über dein Leben.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6833594369">Im App Store laden</a>
+  </section>
+
+  <section>
+    <h2>Norbert hat auch gezählt</h2>
+    <ul class="more">
+      <li><a href="stunden-unter-der-dusche.html">Wie viele Stunden hast du unter der Dusche verbracht?</a></li>
+      <li><a href="getrunkenes-wasser.html">Wie viele Liter Wasser und andere Getränke hast du seit deiner Geburt getrunken?</a></li>
+      <li><a href="gegessene-nahrung.html">Wie viele Kilo Essen hast du seit deiner Geburt gegessen?</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="../">Norbert</a>
+    <a href="../privacy.html">Datenschutz</a>
+    <a href="../../">Two Pins Studio</a>
+  </footer>
+</div>
+<script>
+const fmt = v => {
+  const [w, d] = (Math.abs(v) >= 10 ? String(Math.round(v)) : v.toFixed(1).replace(/\.0$/, '')).split('.');
+  return w.replace(/\B(?=(\d{3})+$)/g, '.') + (d ? ',' + d : '');
+};
+const calc = age => { const answer = Math.max(age - 3, 0) * 365 * 57 / 200; return { age, answer }; };
+const input = document.getElementById('age');
+input.oninput = () => {
+  const age = +input.value;
+  if (!(age >= 1 && age <= 120)) return;
+  const v = calc(age);
+  for (const el of document.querySelectorAll('[data-v]')) el.textContent = fmt(v[el.dataset.v]);
+};
+</script>
+</body>
+</html>

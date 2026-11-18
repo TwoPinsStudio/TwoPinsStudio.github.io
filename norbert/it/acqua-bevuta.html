@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanti litri d'acqua e altre bevande hai bevuto in vita tua? | Norbert</title>
+<meta name="description" content="Quanti litri d'acqua e altre bevande hai bevuto in vita tua? Inserisci la tua età e Norbert conta: a 30 anni, sono circa 16.425 litri. Il calcolo e le fonti.">
+<link rel="canonical" href="https://twopinsstudio.github.io/norbert/it/acqua-bevuta.html">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/eau-bue.html">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/water-drunk.html">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/acqua-bevuta.html">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/getrunkenes-wasser.html">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/agua-bebida.html">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/agua-bebida.html">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/en/water-drunk.html">
+<meta name="apple-itunes-app" content="app-id=6833594369">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/norbert/it/acqua-bevuta.html">
+<meta property="og:title" content="Quanti litri d'acqua e altre bevande hai bevuto in vita tua?">
+<meta property="og:description" content="Quanti litri d'acqua e altre bevande hai bevuto in vita tua? Inserisci la tua età e Norbert conta: a 30 anni, sono circa 16.425 litri. Il calcolo e le fonti.">
+<meta property="og:image" content="https://twopinsstudio.github.io/norbert/norbert.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../norbert.css">
+</head>
+<body>
+<div class="wrap stat">
+  <header>
+    <a href="../">← Norbert</a>
+  </header>
+
+  <h1>Quanti litri d'acqua e altre bevande hai bevuto in vita tua?</h1>
+
+  <div class="calc">
+    <label>La tua età <input id="age" type="number" inputmode="numeric" min="1" max="120" value="30"> anni</label>
+    <p class="answer">A <span data-v="age">30</span> anni, circa <b data-v="answer">16.425</b> litri</p>
+  </div>
+
+  <div class="says">
+    <img src="../norbert.png" alt="Norbert il fantasma" width="88" height="88">
+    <p>« Un dromedario beve 100 litri in dieci minuti. A te servono due mesi. »</p>
+  </div>
+
+  <p class="muted">L'acqua del rubinetto costa circa 100 volte meno di quella in bottiglia, e niente plastica.</p>
+
+  <section>
+    <h2>Come conta Norbert</h2>
+    <p>Circa 1,5 litri di bevande al giorno. Attenzione: l'Autorità europea per la sicurezza alimentare raccomanda 2 litri per le donne e 2,5 litri per gli uomini, ma contando l'acqua dei cibi. Norbert ha tolto a occhio la parte che arriva dal cibo.</p>
+    <p class="muted">Fonti: EFSA, EFSA Journal, 2010; Zooparc Overloon, Dromedary</p>
+  </section>
+
+  <section class="why">
+    <h2>I tuoi amici l'avrebbero indovinato?</h2>
+    <p>In Norbert, ognuno scommette prima sul numero, poi Norbert rivela la risposta. Vince chi si avvicina di più. Da 2 a 8 giocatori su un solo telefono, più di 100 statistiche sulla tua vita.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6833594369">Scarica dall'App Store</a>
+  </section>
+
+  <section>
+    <h2>Norbert ha contato anche</h2>
+    <ul class="more">
+      <li><a href="cibo-mangiato.html">Quanti chili di cibo hai mangiato in vita tua?</a></li>
+      <li><a href="polli-mangiati.html">Quanti polli interi hai mangiato in vita tua?</a></li>
+      <li><a href="ore-a-tavola.html">Quante ore hai passato a mangiare in vita tua?</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="../">Norbert</a>
+    <a href="../privacy.html">Privacy</a>
+    <a href="../../">Two Pins Studio</a>
+  </footer>
+</div>
+<script>
+const fmt = v => {
+  const [w, d] = (Math.abs(v) >= 10 ? String(Math.round(v)) : v.toFixed(1).replace(/\.0$/, '')).split('.');
+  return w.replace(/\B(?=(\d{3})+$)/g, '.') + (d ? ',' + d : '');
+};
+const calc = age => { const answer = age * 365 * 1.5; return { age, answer }; };
+const input = document.getElementById('age');
+input.oninput = () => {
+  const age = +input.value;
+  if (!(age >= 1 && age <= 120)) return;
+  const v = calc(age);
+  for (const el of document.querySelectorAll('[data-v]')) el.textContent = fmt(v[el.dataset.v]);
+};
+</script>
+</body>
+</html>

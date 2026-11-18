@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Combien de kilos de nourriture as-tu mangés depuis ta naissance ? | Norbert</title>
+<meta name="description" content="Combien de kilos de nourriture as-tu mangés depuis ta naissance ? Entre ton âge et Norbert compte : à 30 ans, c'est environ 16 425 kilos. Le calcul et les sources.">
+<link rel="canonical" href="https://twopinsstudio.github.io/norbert/fr/nourriture-mangee.html">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/nourriture-mangee.html">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/food-eaten.html">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/cibo-mangiato.html">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/gegessene-nahrung.html">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/comida-ingerida.html">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/comida-ingerida.html">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/en/food-eaten.html">
+<meta name="apple-itunes-app" content="app-id=6833594369">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/norbert/fr/nourriture-mangee.html">
+<meta property="og:title" content="Combien de kilos de nourriture as-tu mangés depuis ta naissance ?">
+<meta property="og:description" content="Combien de kilos de nourriture as-tu mangés depuis ta naissance ? Entre ton âge et Norbert compte : à 30 ans, c'est environ 16 425 kilos. Le calcul et les sources.">
+<meta property="og:image" content="https://twopinsstudio.github.io/norbert/norbert.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../logo.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../norbert.css">
+</head>
+<body>
+<div class="wrap stat">
+  <header>
+    <a href="../">← Norbert</a>
+  </header>
+
+  <h1>Combien de kilos de nourriture as-tu mangés depuis ta naissance ?</h1>
+
+  <div class="calc">
+    <label>Ton âge <input id="age" type="number" inputmode="numeric" min="1" max="120" value="30"> ans</label>
+    <p class="answer">À <span data-v="age">30</span> ans, environ <b data-v="answer">16 425</b> kilos</p>
+  </div>
+
+  <div class="says">
+    <img src="../norbert.png" alt="Norbert le fantôme" width="88" height="88">
+    <p>« J'ai tout pesé, miette par miette. Celles du canapé, je les ai mises à part. »</p>
+  </div>
+
+  <p class="muted">Le poids de <span data-v="e0">3,3</span> éléphants.</p>
+
+  <section>
+    <h2>Comment Norbert compte</h2>
+    <p>Environ 1,5 kilo de nourriture par jour, boissons non comprises. Aucune source ne donne ce chiffre proprement : les bilans de l'Organisation des Nations unies pour l'alimentation donnent plus, mais en comptant le gaspillage. C'est une estimation de Norbert.</p>
+  </section>
+
+  <section class="why">
+    <h2>Et tes amis, ils auraient deviné ?</h2>
+    <p>Dans Norbert, chacun parie d'abord sur le chiffre, puis Norbert révèle la réponse. Le plus proche gagne. De 2 à 8 joueurs sur un seul téléphone, plus de 100 stats sur ta vie.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6833594369">Télécharger sur l'App Store</a>
+  </section>
+
+  <section>
+    <h2>Norbert a aussi compté</h2>
+    <ul class="more">
+      <li><a href="poulets-manges.html">Combien de poulets entiers as-tu mangés depuis ta naissance ?</a></li>
+      <li><a href="heures-a-table.html">Combien d'heures as-tu passées à table depuis ta naissance ?</a></li>
+      <li><a href="battements-de-coeur.html">Combien de fois ton cœur a-t-il battu depuis ta naissance ?</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="../">Norbert</a>
+    <a href="../privacy.html">Confidentialité</a>
+    <a href="../../">Two Pins Studio</a>
+  </footer>
+</div>
+<script>
+const fmt = v => {
+  const [w, d] = (Math.abs(v) >= 10 ? String(Math.round(v)) : v.toFixed(1).replace(/\.0$/, '')).split('.');
+  return w.replace(/\B(?=(\d{3})+$)/g, ' ') + (d ? ',' + d : '');
+};
+const calc = age => { const answer = age * 365 * 1.5; return { age, answer, e0: answer / 5000 }; };
+const input = document.getElementById('age');
+input.oninput = () => {
+  const age = +input.value;
+  if (!(age >= 1 && age <= 120)) return;
+  const v = calc(age);
+  for (const el of document.querySelectorAll('[data-v]')) el.textContent = fmt(v[el.dataset.v]);
+};
+</script>
+</body>
+</html>
