@@ -1,9 +1,357 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://twopinsstudio.github.io/</loc></url>
-  <url><loc>https://twopinsstudio.github.io/norbert/</loc></url>
-  <url><loc>https://twopinsstudio.github.io/palpit/</loc></url>
-  <url><loc>https://twopinsstudio.github.io/rarissimo/</loc></url>
+  <url><loc>https://twopinsstudio.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/norbert/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/norbert/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/norbert/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/norbert/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/norbert/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/norbert/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/norbert/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/norbert/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/norbert/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/norbert/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/norbert/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/norbert/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/norbert/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/norbert/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/norbert/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/norbert/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/norbert/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/norbert/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/norbert/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/norbert/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/norbert/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/norbert/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/norbert/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/norbert/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/norbert/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/norbert/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/norbert/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/norbert/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/norbert/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/palpit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/palpit/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/palpit/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/palpit/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/palpit/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/palpit/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/palpit/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/palpit/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/palpit/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/palpit/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/palpit/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/palpit/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/palpit/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/palpit/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/palpit/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/palpit/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/palpit/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/palpit/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/palpit/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/palpit/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/palpit/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/palpit/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/palpit/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/palpit/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/palpit/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/palpit/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/palpit/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/palpit/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/palpit/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/palpit/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/palpit/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/palpit/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/palpit/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/palpit/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/palpit/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/palpit/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/palpit/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/palpit/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/palpit/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/palpit/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/palpit/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/palpit/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/palpit/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/palpit/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/palpit/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/palpit/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/palpit/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/palpit/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/palpit/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/palpit/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/palpit/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/palpit/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/palpit/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/palpit/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/palpit/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/palpit/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/palpit/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/palpit/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/palpit/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/palpit/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/palpit/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/palpit/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/palpit/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/palpit/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/palpit/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/palpit/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/palpit/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/palpit/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/palpit/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/palpit/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/palpit/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/palpit/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/palpit/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/palpit/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/palpit/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/palpit/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/palpit/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/palpit/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/palpit/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/palpit/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/rarissimo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/rarissimo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/rarissimo/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/rarissimo/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/rarissimo/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/rarissimo/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/rarissimo/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/rarissimo/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/rarissimo/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/rarissimo/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/rarissimo/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/rarissimo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/rarissimo/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/rarissimo/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/rarissimo/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/rarissimo/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/rarissimo/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/rarissimo/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/rarissimo/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/rarissimo/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/rarissimo/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/rarissimo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/rarissimo/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/rarissimo/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/rarissimo/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/rarissimo/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/rarissimo/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/rarissimo/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/rarissimo/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/rarissimo/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/rarissimo/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/rarissimo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/rarissimo/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/rarissimo/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/rarissimo/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/rarissimo/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/rarissimo/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/rarissimo/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/rarissimo/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/rarissimo/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/rarissimo/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/rarissimo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/rarissimo/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/rarissimo/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/rarissimo/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/rarissimo/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/rarissimo/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/rarissimo/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/rarissimo/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/rarissimo/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/rarissimo/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/rarissimo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/rarissimo/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/rarissimo/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/rarissimo/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/rarissimo/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/rarissimo/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/rarissimo/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/rarissimo/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/rarissimo/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/rarissimo/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/rarissimo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/rarissimo/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/rarissimo/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/rarissimo/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/rarissimo/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/rarissimo/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/rarissimo/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/rarissimo/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/rarissimo/"/>
+  </url>
+  <url><loc>https://twopinsstudio.github.io/rarissimo/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/rarissimo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/rarissimo/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/rarissimo/it/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/rarissimo/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/rarissimo/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/rarissimo/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/rarissimo/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/rarissimo/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/rarissimo/"/>
+  </url>
   <url><loc>https://twopinsstudio.github.io/norbert/fr/battements-de-coeur.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/norbert/fr/battements-de-coeur.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/norbert/en/heartbeats.html"/>

@@ -3,8 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rarissimo</title>
-<meta name="description" content="A party game for 2 to 4 teams around one phone. The rarest answer wins. No ads, no tracking.">
+<!-- seo -->
+<title>Rarissimo · Party game where the rarest answer wins</title>
+<meta name="description" content="Name a cheese, a country, a Disney film… but the one nobody else will think of. A free party game for 2 to 4 teams around one phone, with 300 categories.">
+<link rel="canonical" href="https://twopinsstudio.github.io/rarissimo/">
+<link rel="alternate" hreflang="en" href="https://twopinsstudio.github.io/rarissimo/">
+<link rel="alternate" hreflang="fr" href="https://twopinsstudio.github.io/rarissimo/fr/">
+<link rel="alternate" hreflang="it" href="https://twopinsstudio.github.io/rarissimo/it/">
+<link rel="alternate" hreflang="de" href="https://twopinsstudio.github.io/rarissimo/de/">
+<link rel="alternate" hreflang="es" href="https://twopinsstudio.github.io/rarissimo/es/">
+<link rel="alternate" hreflang="pt" href="https://twopinsstudio.github.io/rarissimo/pt/">
+<link rel="alternate" hreflang="ja" href="https://twopinsstudio.github.io/rarissimo/ja/">
+<link rel="alternate" hreflang="ko" href="https://twopinsstudio.github.io/rarissimo/ko/">
+<link rel="alternate" hreflang="x-default" href="https://twopinsstudio.github.io/rarissimo/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twopinsstudio.github.io/rarissimo/">
+<meta property="og:title" content="Rarissimo · Party game where the rarest answer wins">
+<meta property="og:description" content="Name a cheese, a country, a Disney film… but the one nobody else will think of. A free party game for 2 to 4 teams around one phone, with 300 categories.">
+<meta property="og:image" content="https://twopinsstudio.github.io/rarissimo/shots/card.jpg">
+<meta name="twitter:card" content="summary">
+<!-- /seo -->
 <link rel="icon" href="../logo.svg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Fredoka:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="rarissimo.css">
@@ -18,9 +36,9 @@
 
   <h1>Rarissimo</h1>
   <p class="tagline" data-i18n="rr_tagline">The rarest wins.</p>
-  <p class="lead" data-i18n="rr_pitch"></p>
-  <p class="lead" data-i18n="rr_pitch2"></p>
-  <p class="note" data-i18n="rr_lang_note"></p>
+  <p class="lead" data-i18n="rr_pitch">A category appears: countries of Europe, cheeses, Disney films… Each team secretly agrees on one answer, then everyone reveals at the same time on 3-2-1. Obvious answers barely score. Rare ones pay off.</p>
+  <p class="lead" data-i18n="rr_pitch2">About 300 categories across 11 themes, from geography to cinema, sport and food. One phone on the table is all you need.</p>
+  <p class="note" data-i18n="rr_lang_note">Available in English, French, Italian, German, Spanish and Portuguese, with categories adapted to each language.</p>
   <div class="stores">
     <div class="store">App Store<b data-i18n="soon">Coming soon</b></div>
     <div class="store">Google Play<b data-i18n="soon">Coming soon</b></div>
@@ -37,31 +55,31 @@
   </section>
 
   <section>
-    <h2 data-i18n="howto">How to play</h2>
+    <h2 data-i18n="howto">HOW TO PLAY</h2>
     <div class="rows rules">
-      <div><h3 data-i18n="rr_think"></h3><p data-i18n="rr_thinkD"></p></div>
-      <div><h3 data-i18n="rr_reveal"></h3><p data-i18n="rr_revealD"></p></div>
-      <div><h3 data-i18n="rr_score"></h3><p data-i18n="rr_scoreD"></p></div>
+      <div><h3 data-i18n="rr_think">1. Whisper</h3><p data-i18n="rr_thinkD">A category appears. Each team quietly agrees on a single answer.</p></div>
+      <div><h3 data-i18n="rr_reveal">2. Reveal</h3><p data-i18n="rr_revealD">On 3-2-1, every team calls out its answer at the same time.</p></div>
+      <div><h3 data-i18n="rr_score">3. Score</h3><p data-i18n="rr_scoreD">The rarer the answer, the more it is worth. A wrong answer scores nothing. A correct answer missing from the list still counts: the table agrees on its value.</p></div>
     </div>
-    <h3 style="margin-top:28px" data-i18n="rr_points"></h3>
+    <h3 style="margin-top:28px" data-i18n="rr_points">Rarity</h3>
     <div class="tiers">
-      <span style="background:#18D6FF" data-i18n="rr_easy"></span>
-      <span style="background:#7DFF4F" data-i18n="rr_medium"></span>
-      <span style="background:#FF8A00" data-i18n="rr_rare"></span>
-      <span style="background:#FFE600" data-i18n="rr_legend"></span>
+      <span style="background:#18D6FF" data-i18n="rr_easy">Easy · 1 pt</span>
+      <span style="background:#7DFF4F" data-i18n="rr_medium">Medium · 2 pts</span>
+      <span style="background:#FF8A00" data-i18n="rr_rare">Rare · 3 pts</span>
+      <span style="background:#FFE600" data-i18n="rr_legend">Legendary · 5 pts</span>
     </div>
     <div class="rows" style="margin-top:28px">
-      <div><h3 data-i18n="rr_dup"></h3><p data-i18n="rr_dupD"></p></div>
-      <div><h3 data-i18n="rr_final"></h3><p data-i18n="rr_finalD"></p></div>
-      <div><h3 data-i18n="rr_setup"></h3><p data-i18n="rr_setupD"></p></div>
+      <div><h3 data-i18n="rr_dup">Same answer? Nobody scores</h3><p data-i18n="rr_dupD">If two teams give the same answer, neither of them scores. Playing it safe has a price.</p></div>
+      <div><h3 data-i18n="rr_final">Final round counts double</h3><p data-i18n="rr_finalD">The team with the most points after the last round wins. In case of a tie, a sudden-death round decides.</p></div>
+      <div><h3 data-i18n="rr_setup">Your game, your way</h3><p data-i18n="rr_setupD">2 to 4 teams, 5, 10 or 15 rounds, and the themes you like. An interrupted game can be resumed later.</p></div>
     </div>
   </section>
 
   <section>
     <div class="why">
-      <h2 data-i18n="free_title"></h2>
-      <p data-i18n="rr_free"></p>
-      <p data-i18n="support_text"></p>
+      <h2 data-i18n="free_title">No ads, no tracking</h2>
+      <p data-i18n="rr_free">Rarissimo is free. No account, no ads, no in-app purchases, no tracking. Only anonymous answer statistics are shared, to measure how rare each answer really is.</p>
+      <p data-i18n="support_text">If you enjoy what I make and want to help me keep going, a coffee goes a long way.</p>
       <a class="btn" href="https://ko-fi.com/twopinsstudio" target="_blank" rel="noopener" data-i18n="coffee">Buy me a coffee</a>
     </div>
   </section>
@@ -69,8 +87,8 @@
   <section>
     <h2 data-i18n="credits">Credits</h2>
     <dl>
-      <dt data-i18n="cr_made"></dt><dd>Jeff · Two Pins Studio</dd>
-      <dt data-i18n="cr_tech"></dt><dd>Flutter &amp; Firebase</dd>
+      <dt data-i18n="cr_made">Design and code</dt><dd>Jeff · Two Pins Studio</dd>
+      <dt data-i18n="cr_tech">Built with</dt><dd>Flutter &amp; Firebase</dd>
     </dl>
   </section>
 
