@@ -20,8 +20,9 @@ h2 { font-size: 26px; color: var(--yellow); margin: 0 0 20px; }
 h3 { font-size: 19px; margin: 0 0 4px; color: var(--ink); }
 p { max-width: 64ch; margin: 0 0 14px; }
 .muted { color: var(--muted); }
-.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
-.shots img { width: 100%; display: block; border-radius: 14px; border: 3px solid var(--yellow); box-shadow: 0 6px 0 var(--pink); }
+.shots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+@media (max-width: 640px) { .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 62%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; } .shots img { scroll-snap-align: center; } }
+.shots img { width: 100%; height: auto; display: block; border-radius: 14px; border: 3px solid var(--yellow); box-shadow: 0 6px 0 var(--pink); }
 .rows { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px 28px; margin-top: 16px; }
 .rows div { border-left: 3px solid var(--cyan); padding-left: 14px; }
 .rows p { font-size: 15px; color: var(--muted); margin: 0; }
