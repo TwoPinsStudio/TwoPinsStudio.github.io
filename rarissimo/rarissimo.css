@@ -11,7 +11,8 @@ h1 { font-size: clamp(48px, 11vw, 96px); line-height: 1; margin: 32px 0 8px; col
 .tagline { font-family: "Luckiest Guy", sans-serif; font-size: 26px; letter-spacing: .04em; color: var(--cyan); margin: 0 0 16px; }
 .lead { color: var(--muted); max-width: 60ch; margin: 0 0 18px; }
 .note { font-size: 15px; color: var(--muted); border-left: 3px solid var(--yellow); padding-left: 12px; margin: 0 0 24px; }
-.stores { display: flex; gap: 12px; flex-wrap: wrap; }
+.stores { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.badge img { display: block; height: 44px; }
 .store { border: 2px solid var(--violet); border-radius: 12px; padding: 8px 16px; line-height: 1.25; color: var(--muted); font-size: 13px; }
 .store b { display: block; color: var(--ink); font-size: 17px; }
 section { padding-block: 40px; }

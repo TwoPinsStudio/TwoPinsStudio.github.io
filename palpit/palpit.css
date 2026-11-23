@@ -17,7 +17,8 @@ h1 .amp { color: #fff; }
 .pulse path { fill: none; stroke: var(--cyan); stroke-width: 2; filter: drop-shadow(0 0 6px var(--cyan)); }
 .tagline { font-size: 22px; max-width: 34ch; margin: 0 0 12px; }
 .lead { color: var(--muted); max-width: 60ch; margin: 0 0 24px; }
-.stores { display: flex; gap: 12px; flex-wrap: wrap; }
+.stores { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.badge img { display: block; height: 44px; }
 .store { border: 1px solid #2a3350; border-radius: 10px; padding: 8px 16px; line-height: 1.25; color: var(--muted); font-size: 13px; }
 .store b { display: block; color: var(--ink); font-size: 17px; }
 section { padding-block: 40px; }
